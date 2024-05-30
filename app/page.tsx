@@ -1,3 +1,5 @@
+import TourDates from '@/components/tour-dates';
+import { tourDates } from '@/config/tourDates2024';
 import Image from 'next/image';
 
 export default function Home() {
@@ -26,7 +28,7 @@ export default function Home() {
           Collectif festif de chanteurs musiciens lorrains
         </h2>
 
-        <p className='text-md px-4 text-justify mt-4 mb-8'>
+        <p className='text-md px-4 text-justify mt-4'>
           Imaginez un savant mélange des artistes suivants : Les Garçons
           Trottoirs, Alex Toucourt, David Vincent, Julien m’a dit, La P’tite
           Sœur, La French Vapeur et La Casa Bancale. Dix trublions qui, tout
@@ -35,6 +37,20 @@ export default function Home() {
           plaisir. <br />
           Accrochez vous bien, ça va envoyer du Grôs !
         </p>
+      </div>
+
+      <Image
+        src='/tour-dates.jpg'
+        alt='Le Grôs Tour en concert'
+        className='my-20 w-full h-auto'
+        width={1392}
+        height={906}
+      />
+
+      <div className='mt-12'>
+        <h2 className='text-2xl font-bold text-center'>La Grôsse Tournée !</h2>
+
+        <TourDates tourDates={tourDates} />
       </div>
     </>
   );
