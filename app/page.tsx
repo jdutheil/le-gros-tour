@@ -90,6 +90,17 @@ export default function Home() {
           06 27 35 43 54
         </p>
       </div>
+
+      <div className='mt-8 mb-4 flex flex-row gap-4 items-center justify-center'>
+        <Image
+          src='/trivial-tango.png'
+          alt='Trivial Tango'
+          width={100}
+          height={100}
+        />
+
+        <Image src='/adami.png' alt='Adami' width={100} height={50} />
+      </div>
     </>
   );
 }
