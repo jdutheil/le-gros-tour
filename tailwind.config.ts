@@ -24,9 +24,20 @@ const config: Config = {
             opacity: '1',
           },
         },
+        descend: {
+          '0%': {
+            transform: 'translateY(-100vh)', // Starts above the screen
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0)', // Ends at the original position
+            opacity: '1',
+          },
+        },
       },
       animation: {
         'spin-descend': 'spinAndDescend 3s ease-out forwards', // Use 'forwards' to maintain the final state
+        descend: 'descend 3s ease-out forwards', // Use 'forwards' to maintain the final state
       },
     },
   },

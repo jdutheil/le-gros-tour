@@ -12,7 +12,7 @@ export default function Home() {
           alt='Le Grôs Tour'
           width={1920}
           height={1080}
-          className='w-full'
+          className='w-full animate-descend'
         />
 
         <Image
