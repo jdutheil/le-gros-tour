@@ -34,10 +34,20 @@ const config: Config = {
             opacity: '1',
           },
         },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         'spin-descend': 'spinAndDescend 3s ease-out forwards', // Use 'forwards' to maintain the final state
-        descend: 'descend 3s ease-out forwards', // Use 'forwards' to maintain the final state
+        descend: 'descend 3s ease-out forwards', // Use 'forwards' to maintain the final state,
+        blink: 'blink 1s ease-in-out infinite',
+        'fade-in': 'fadeIn 1.5s ease-out forwards',
       },
     },
   },

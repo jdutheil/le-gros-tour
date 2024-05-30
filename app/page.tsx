@@ -1,9 +1,28 @@
+'use client';
+
 import Crowdfunding from '@/components/crowdfunding';
+import Edito from '@/components/edito';
 import TourDates from '@/components/tour-dates';
 import { tourDates } from '@/config/tourDates2024';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [hasScrolled, setHasScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHasScrolled(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className='flex min-h-screen flex-col items-center'>
@@ -22,23 +41,35 @@ export default function Home() {
           height={1400}
           className='w-1/2 h-auto absolute top-[65%] left-[50%] -translate-x-[50%] -translate-y-[50%] animate-spin-descend'
         />
+
+        <div
+          className={`fixed bottom-10 left-1/2 -translate-x-1/2 ${
+            !hasScrolled ? 'animate-blink' : 'hidden'
+          } transition-opacity duration-300 ease-in-out ${
+            hasScrolled ? '' : 'opacity-0'
+          }`}
+          style={{
+            animationDelay: '3s',
+          }}
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            strokeWidth={2}
+            className='h-8 w-8 text-white'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M19 14l-7 7m0 0l-7-7m7 7V3'
+            />
+          </svg>
+        </div>
       </div>
 
-      <div>
-        <h2 className='text-2xl font-bold text-center'>
-          Collectif festif de chanteurs musiciens lorrains
-        </h2>
-
-        <p className='text-md px-4 text-justify mt-4'>
-          Imaginez un savant mélange des artistes suivants : Les Garçons
-          Trottoirs, Alex Toucourt, David Vincent, Julien m’a dit, La P’tite
-          Sœur, La French Vapeur et La Casa Bancale. Dix trublions qui, tout
-          naturellement, réarrangent et jouent sur scène les morceaux de chaque
-          groupe dans des versions inédites dans un seul but : vous donner du
-          plaisir. <br />
-          Accrochez vous bien, ça va envoyer du Grôs !
-        </p>
-      </div>
+      <Edito />
 
       <Image
         src='/tour-dates.jpg'
