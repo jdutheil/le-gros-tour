@@ -4,8 +4,11 @@ import Crowdfunding from '@/components/crowdfunding';
 import Edito from '@/components/edito';
 import TourDates from '@/components/tour-dates';
 import { tourDates } from '@/config/tourDates2024';
+import { Caveat } from 'next/font/google';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+
+const caveat = Caveat({ subsets: ['latin'] });
 
 export default function Home() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -80,13 +83,17 @@ export default function Home() {
       />
 
       <div className='mt-12'>
-        <h2 className='text-2xl font-bold text-center'>La Grôsse Tournée</h2>
+        <h2 className={`text-3xl font-bold text-center ${caveat.className}`}>
+          La Grôsse Tournée
+        </h2>
 
         <TourDates tourDates={tourDates} />
       </div>
 
       <div className='mt-8'>
-        <h2 className='text-2xl font-bold text-center'>Le Grôs Album</h2>
+        <h2 className={`text-3xl font-bold text-center ${caveat.className}`}>
+          Le Grôs Album
+        </h2>
 
         <p className='text-md px-4 text-justify mt-4'>
           En 2024, Le Grôs Tour enregistre son premier album,{' '}
@@ -101,7 +108,9 @@ export default function Home() {
       </div>
 
       <div className='mt-8'>
-        <h2 className='text-2xl font-bold text-center'>Les Grôs Contacts</h2>
+        <h2 className={`text-3xl font-bold text-center ${caveat.className}`}>
+          Les Grôs Contacts
+        </h2>
 
         <p className='text-md px-4 text-justify mt-4'>
           <strong>Booking : </strong> Jérémy Dutheil <br />

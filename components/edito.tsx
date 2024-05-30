@@ -1,6 +1,9 @@
 'use client';
 
+import { Caveat } from 'next/font/google';
 import { useInView } from 'react-intersection-observer';
+
+const caveat = Caveat({ subsets: ['latin'] });
 
 export default function Edito() {
   const { ref, inView } = useInView({
@@ -11,7 +14,7 @@ export default function Edito() {
   return (
     <div ref={ref}>
       <h2
-        className={`text-2xl font-bold text-center ${
+        className={`${caveat.className} text-3xl px-8 font-bold text-center ${
           inView ? 'animate-fade-in' : 'opacity-0'
         }`}
       >
@@ -19,7 +22,7 @@ export default function Edito() {
       </h2>
 
       <p
-        className={`text-md px-4 text-justify mt-4 ${
+        className={`text-md px-4 text-justify mt-8 ${
           inView ? 'animate-fade-in' : 'opacity-0'
         }`}
       >
