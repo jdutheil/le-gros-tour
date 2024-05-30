@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Edito() {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 0.75,
   });
 

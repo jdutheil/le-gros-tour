@@ -9,7 +9,7 @@ export type TourDateItemProps = {
 
 export default function TourDateItem({ tourDate }: TourDateItemProps) {
   const { ref, inView } = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     threshold: 1,
   });
 
