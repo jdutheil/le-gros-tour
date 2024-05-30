@@ -20,7 +20,7 @@ export default function Home() {
           alt='Le Grôs Tour - Collectif Festif'
           width={1400}
           height={1400}
-          className='w-1/2 h-auto absolute top-[65%] left-[50%] -translate-x-[50%] -translate-y-[50%]'
+          className='w-1/2 h-auto absolute top-[65%] left-[50%] -translate-x-[50%] -translate-y-[50%] animate-spin-descend'
         />
       </div>
 

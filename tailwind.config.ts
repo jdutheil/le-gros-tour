@@ -1,17 +1,32 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      keyframes: {
+        spinAndDescend: {
+          '0%': {
+            transform: 'translate(-50%, -150vh) rotate(0deg)', // Starts above the screen
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translate(-50%, -50%) rotate(360deg)', // Ends centered
+            opacity: '1',
+          },
+        },
+      },
+      animation: {
+        'spin-descend': 'spinAndDescend 3s ease-out forwards', // Use 'forwards' to maintain the final state
       },
     },
   },
