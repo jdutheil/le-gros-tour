@@ -55,7 +55,7 @@ export default function Home() {
       </div>
 
       <div className='mt-8'>
-        <h2 className='text-2xl font-bold text-center'>L&apos;album live</h2>
+        <h2 className='text-2xl font-bold text-center'>Le Grôs Album</h2>
 
         <p className='text-md px-4 text-justify mt-4'>
           En 2024, Le Grôs Tour enregistre son premier album,{' '}
@@ -67,6 +67,28 @@ export default function Home() {
         </p>
 
         <Crowdfunding />
+      </div>
+
+      <div className='mt-8'>
+        <h2 className='text-2xl font-bold text-center'>Les Grôs Contacts</h2>
+
+        <p className='text-md px-4 text-justify mt-4'>
+          <strong>Booking : </strong> Jérémy Dutheil <br />
+          jeremy@jeremy-dutheil.fr <br />
+          06 85 38 22 16
+        </p>
+
+        <p className='text-md px-4 text-justify mt-4'>
+          <strong>Production : </strong> Bruno Derpmann <br />
+          b.derpmann@gmail.com <br />
+          06 62 37 73 73
+        </p>
+
+        <p className='text-md px-4 text-justify mt-4'>
+          <strong>Technique : </strong> Simon Cremel <br />
+          simon.cremel@gmail.com <br />
+          06 27 35 43 54
+        </p>
       </div>
     </>
   );
