@@ -1,3 +1,4 @@
+import Crowdfunding from '@/components/crowdfunding';
 import TourDates from '@/components/tour-dates';
 import { tourDates } from '@/config/tourDates2024';
 import Image from 'next/image';
@@ -51,6 +52,21 @@ export default function Home() {
         <h2 className='text-2xl font-bold text-center'>La Grôsse Tournée !</h2>
 
         <TourDates tourDates={tourDates} />
+      </div>
+
+      <div className='mt-8'>
+        <h2 className='text-2xl font-bold text-center'>L&apos;album live</h2>
+
+        <p className='text-md px-4 text-justify mt-4'>
+          En 2024, Le Grôs Tour enregistre son premier album,{' '}
+          <strong>en live</strong> ! Comme un résumé de cette belle tournée, le
+          disque sera disponible à l&apos;automne 2024. <br />
+          Pour mener à bien ce projet, nous avons besoin de votre soutien ;
+          rendez-vous sur la page Ulule ci-dessous pour plus d&apos;informations
+          !
+        </p>
+
+        <Crowdfunding />
       </div>
     </>
   );
