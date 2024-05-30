@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className='flex min-h-screen flex-col items-center justify-between pb-20'>
+      <div className='flex min-h-screen flex-col items-center'>
         <Image
           src='/couv-img.jpg'
           alt='Le Grôs Tour'
@@ -20,7 +20,7 @@ export default function Home() {
           alt='Le Grôs Tour - Collectif Festif'
           width={1400}
           height={1400}
-          className='w-1/2 h-auto'
+          className='w-1/2 h-auto absolute top-[65%] left-[50%] -translate-x-[50%] -translate-y-[50%]'
         />
       </div>
 
@@ -49,7 +49,7 @@ export default function Home() {
       />
 
       <div className='mt-12'>
-        <h2 className='text-2xl font-bold text-center'>La Grôsse Tournée !</h2>
+        <h2 className='text-2xl font-bold text-center'>La Grôsse Tournée</h2>
 
         <TourDates tourDates={tourDates} />
       </div>
