@@ -9,7 +9,7 @@ export default function QRCode() {
         <iframe
           width='560'
           height='315'
-          src='https://www.youtube.com/embed/0XZvV8mTy90?si=ZF1fJB0HsMowFb_s'
+          src='https://www.youtube.com/embed/Mr2Ql0qYfrg?si=Mxt4j11mzQe97eQf'
           title='YouTube video player'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
         ></iframe>
@@ -21,8 +21,9 @@ export default function QRCode() {
 
         <p className='text-md px-4 text-justify mt-4'>
           Cette année, Le Grôs Tour se lance dans l&apos;enregistrement
-          d&apos;un album live, qui sera produit à l&apos;Automne 2024 avec des
-          extraits de toute les dates de cette année. <br />
+          d&apos;un album live, dont la production démarrera à l&apos;Automne
+          2024 avec des extraits de toute les dates de cette année. La sortie
+          est prévue pour début 2025 ! <br />
           Pour cela, on va avoir besoin de toi pour nous aider financièrement,
           car on fonctionne de manière complètement indépendante !
         </p>
