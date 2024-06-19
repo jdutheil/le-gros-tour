@@ -7,6 +7,7 @@ import { tourDates } from '@/config/tourDates2024';
 import { Caveat } from 'next/font/google';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 const caveat = Caveat({ subsets: ['latin'] });
 
@@ -129,6 +130,12 @@ export default function Home() {
           simon.cremel@gmail.com <br />
           06 27 35 43 54
         </p>
+      </div>
+
+      <div className='flex flex-row gap-4 justify-center mt-8'>
+        <SocialIcon url='https://www.facebook.com/legrostour' />
+        <SocialIcon url='https://www.instagram.com/le.gros.tour/' />
+        <SocialIcon url='https://www.youtube.com/@legrostourbandorganise6229' />
       </div>
 
       <div className='mt-8 mb-4 flex flex-row gap-4 items-center justify-center'>

@@ -3,8 +3,19 @@ import { SocialIcon } from 'react-social-icons';
 export default function QRCode() {
   return (
     <>
-      <div className='flex flex-col items-center'>
-        <h2 className={`text-3xl font-bold text-center`}>Le Grôs Album</h2>
+      <div className='flex flex-col items-center pt-8 pb-8'>
+        <h2 className={`text-3xl font-bold text-center mb-4`}>Le Grôs Album</h2>
+
+        <iframe
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/0XZvV8mTy90?si=ZF1fJB0HsMowFb_s'
+          title='YouTube video player'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerpolicy='strict-origin-when-cross-origin'
+          allowfullscreen
+        ></iframe>
 
         <p className='text-md px-4 text-justify mt-4'>
           Si tu es arrivé sur cette page, c&apos;est que tu as flashé notre
