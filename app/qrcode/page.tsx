@@ -11,10 +11,7 @@ export default function QRCode() {
           height='315'
           src='https://www.youtube.com/embed/0XZvV8mTy90?si=ZF1fJB0HsMowFb_s'
           title='YouTube video player'
-          frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          referrerpolicy='strict-origin-when-cross-origin'
-          allowfullscreen
         ></iframe>
 
         <p className='text-md px-4 text-justify mt-4'>
