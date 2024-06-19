@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 export default function QRCode() {
   return (
     <>
-      <div className='flex flex-col items-center pt-8 pb-8'>
+      <div className='flex flex-col items-center pt-8 pb-8git'>
         <h2 className={`text-3xl font-bold text-center mb-4`}>Le Grôs Album</h2>
 
         <iframe

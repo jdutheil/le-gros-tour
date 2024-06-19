@@ -14,7 +14,9 @@ export default function Edito() {
   return (
     <div ref={ref}>
       <h2
-        className={`${caveat.className} text-3xl px-8 font-bold text-center ${
+        className={`${
+          caveat.className
+        } text-3xl md:text-5xl px-8 font-bold text-center ${
           inView ? 'animate-fade-in' : 'opacity-0'
         }`}
       >
@@ -22,7 +24,7 @@ export default function Edito() {
       </h2>
 
       <p
-        className={`text-md px-4 text-justify mt-8 ${
+        className={`text-md px-4 text-justify mt-8 md:text-center ${
           inView ? 'animate-fade-in' : 'opacity-0'
         }`}
       >
