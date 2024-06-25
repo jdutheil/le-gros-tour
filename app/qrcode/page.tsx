@@ -1,6 +1,13 @@
+'use client';
+
+import { useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 export default function QRCode() {
+  useEffect(() => {
+    window.location.assign('https://fr.ulule.com/legrostour-album-live');
+  }, []);
+
   return (
     <>
       <div className='flex flex-col items-center pt-8 pb-8git'>
