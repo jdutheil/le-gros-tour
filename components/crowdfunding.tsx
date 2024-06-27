@@ -3,8 +3,7 @@ export default function Crowdfunding() {
     <div className='mt-4 flex items-center justify-center'>
       <iframe
         height='300px'
-        width='auto'
-        src='https://fr.ulule.com/album-jeremy-dutheil-solal-poux/widget.html'
+        src='https://fr.ulule.com/legrostour-album-live/widget.html'
       ></iframe>
     </div>
   );
