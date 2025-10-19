@@ -28,12 +28,12 @@ export default function Home() {
 
   return (
     <>
-      <div className='flex min-h-screen flex-col items-center'>
+      <div className='flex lg:min-h-screen flex-col items-center'>
         <Image
           src='/couv-img.jpg'
           alt='Le Grôs Tour'
           width={1920}
-          height={1080}
+          height={1358}
           className='w-full animate-descend'
         />
 
@@ -44,7 +44,7 @@ export default function Home() {
             hasScrolled ? '' : 'opacity-0'
           }`}
           style={{
-            animationDelay: '3s',
+            animationDelay: '2s',
           }}
         >
           <svg
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='md:container md:mx-auto md:mt-12'>
+      <div className='mt-8 md:container md:mx-auto md:mt-12'>
         <Edito />
 
         <Image

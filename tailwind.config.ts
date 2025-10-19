@@ -45,7 +45,7 @@ const config: Config = {
       },
       animation: {
         'spin-descend': 'spinAndDescend 3s ease-out forwards', // Use 'forwards' to maintain the final state
-        descend: 'descend 3s ease-out forwards', // Use 'forwards' to maintain the final state,
+        descend: 'descend 2s ease-out forwards', // Use 'forwards' to maintain the final state,
         blink: 'blink 1s ease-in-out infinite',
         'fade-in': 'fadeIn 1.5s ease-out forwards',
       },
