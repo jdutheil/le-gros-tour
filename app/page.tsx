@@ -80,7 +80,7 @@ export default function Home() {
           <h2
             className={`text-3xl md:text-5xl font-bold text-center ${caveat.className}`}
           >
-            La Grôsse Tournée
+            La Grôsse Tournée (2025)
           </h2>
 
           <TourDates tourDates={tourDates} />

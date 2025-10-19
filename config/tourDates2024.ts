@@ -2,73 +2,38 @@ import { TourDate } from '@/components/tour-dates';
 
 export const tourDates: TourDate[] = [
   {
-    date: '13/01',
-    city: 'Méricourt',
-    zipCode: '62',
-    eventName: 'Le Cabaret Solidaire',
+    date: '19/04',
+    city: 'Neufchateau',
+    zipCode: '88',
+    eventName: "Le Trait d'Union",
   },
 
   {
-    date: '31/05',
-    city: 'Illkirch',
-    zipCode: '67',
-    eventName: 'Le Printemps des Bretelles',
+    date: '06/06',
+    city: 'Harmonville',
+    zipCode: '88',
+    eventName: 'Dawatt Festival',
   },
 
   {
     date: '21/06',
-    city: 'Evian les Bains',
-    zipCode: '74',
+    city: 'Metz',
+    zipCode: '57',
     eventName: 'Fête de la Musique',
   },
 
   {
-    date: '29/06',
-    city: 'Magny le Hongre',
-    zipCode: '77',
-    eventName: 'Festival Les Magnytudes',
-  },
-
-  {
-    date: '30/06',
-    city: 'Portiragnes',
-    zipCode: '34',
-    eventName: 'Festival Canalissimo',
-  },
-
-  {
-    date: '05/07',
-    city: 'Epinal',
-    zipCode: '88',
-    eventName: "Epinal bouge l'été",
-  },
-
-  {
-    date: '12/07',
-    city: 'Flers',
-    zipCode: '61',
-    eventName: "Les Rendez-Vous de l'été",
-  },
-
-  {
-    date: '07/08',
-    city: 'Josselin',
-    zipCode: '56',
-    eventName: "Festiv'été",
+    date: '02/08',
+    city: 'Sedan',
+    zipCode: '08',
+    eventName: 'Cuivres en Ardennes',
   },
 
   {
     date: '09/08',
-    city: 'Barbatre',
-    zipCode: '85',
-    eventName: 'Concerts à la Pointe',
-  },
-
-  {
-    date: '10/08',
-    city: 'Coteaux du Blanzacais',
-    zipCode: '16',
-    eventName: "Domaine de l'Excuse",
+    city: 'Contrexéville',
+    zipCode: '88',
+    eventName: '',
   },
 
   {
@@ -79,10 +44,10 @@ export const tourDates: TourDate[] = [
   },
 
   {
-    date: '16/08',
-    city: 'Dax',
-    zipCode: '40',
-    eventName: 'Les Férias de Dax',
+    date: '15/08',
+    city: 'Arbois',
+    zipCode: '39',
+    eventName: 'Festival de la Crue',
   },
 
   {
@@ -93,9 +58,16 @@ export const tourDates: TourDate[] = [
   },
 
   {
-    date: '21/09',
-    city: 'Melun',
-    zipCode: '77',
-    eventName: 'Festival Les Affolantes',
+    date: '11/10',
+    city: 'Phalsbourg',
+    zipCode: '57',
+    eventName: 'Dannelzik Festival',
+  },
+
+  {
+    date: '15/11',
+    city: 'Nancy',
+    zipCode: '54',
+    eventName: "L'Autre Canal - Release Party",
   },
 ];
