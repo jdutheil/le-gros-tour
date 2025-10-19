@@ -1,6 +1,5 @@
 'use client';
 
-import Crowdfunding from '@/components/crowdfunding';
 import Edito from '@/components/edito';
 import TourDates from '@/components/tour-dates';
 import { tourDates } from '@/config/tourDates2024';
@@ -86,7 +85,7 @@ export default function Home() {
           <TourDates tourDates={tourDates} />
         </div>
 
-        <div className='mt-8'>
+        <div className='mt-12'>
           <h2
             className={`text-3xl md:text-5xl font-bold text-center ${caveat.className}`}
           >
@@ -94,15 +93,28 @@ export default function Home() {
           </h2>
 
           <p className='text-md px-4 text-justify md:text-center mt-4'>
-            En 2024, Le Grôs Tour enregistre son premier album,{' '}
-            <strong>en live</strong> ! Comme un résumé de cette belle tournée,
-            le disque sera disponible à l&apos;automne 2024. <br />
-            Pour mener à bien ce projet, nous avons besoin de votre soutien ;
-            rendez-vous sur la page Ulule ci-dessous pour plus
-            d&apos;informations !
+            Après une campagne de financement participatif réussie et une bonne
+            année de travail, le disque est enfin là ! C’est un double album
+            live, enregistré l&apos;été dernier lors de leur tournée estivale à
+            travers toute la France. Pour la première fois de son histoire, le
+            groupe a traversé le pays d&apos;Est en Ouest et du Nord au Sud,
+            avalant les kilomètres en camionnettes à la conquête d&apos;un
+            nouveau public. Ainsi ils ont immortalisé leurs concerts dans toutes
+            les villes ou ils sont passés. De retour à la maison, il a fallu
+            sélectionner les titres, 16 concerts en tout, un vrai casse tête
+            mais un paquet de bon souvenirs à réécouter. L&apos;album sortira
+            officiellement le 15 novembre 2025 à l&apos;occasion d&apos;un
+            concert à L&apos;autre canal à NANCY (54). Une grosse fête en
+            perspective que ne vous conseillons de ne pas manquer !
           </p>
 
-          <Crowdfunding />
+          <Image
+            src='/album.jpg'
+            alt='Le Grôs Album'
+            className='my-20 w-1/2 mx-auto h-auto'
+            width={1772}
+            height={1772}
+          />
         </div>
 
         <div className='mt-8 '>
