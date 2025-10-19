@@ -38,14 +38,6 @@ export default function Home() {
           className='w-full animate-descend'
         />
 
-        <Image
-          src='/logo.png'
-          alt='Le Grôs Tour - Collectif Festif'
-          width={1400}
-          height={1400}
-          className='w-1/2 h-auto absolute top-[65%] left-[50%] md:w-[500px] md:top-[50%] -translate-x-[50%] -translate-y-[50%] animate-spin-descend'
-        />
-
         <div
           className={`fixed bottom-10 left-1/2 -translate-x-1/2 ${
             !hasScrolled ? 'animate-blink' : 'hidden'
